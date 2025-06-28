@@ -1,0 +1,6 @@
+FROM python:3.9-slim  # Or your preferred Python base image
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY your_script.py .
+CMD ["python", "your_script.py"] 
